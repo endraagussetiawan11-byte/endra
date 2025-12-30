@@ -1,0 +1,1511 @@
+<!doctype html>
+<html lang="id">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Profil Endra Agus Setiawan - Mahasiswa Manajemen Pendidikan Islam. Artikel dan tips seputar manajemen waktu, produktivitas, dan kehidupan mahasiswa.">
+  <meta name="keywords" content="pendidikan, mahasiswa, manajemen waktu, produktivitas, artikel pendidikan">
+  <meta name="author" content="Endra Agus Setiawan">
+  <title>Endra Agus Setiawan - Mahasiswa Pendidikan | Portfolio &amp; Artikel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="/_sdk/element_sdk.js"></script>
+  <style>
+        body {
+            box-sizing: border-box;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8f9fa;
+            --bg-card: #ffffff;
+            --text-primary: #1a1a1a;
+            --text-secondary: #6c757d;
+            --accent-blue: #2563eb;
+            --accent-blue-dark: #1e40af;
+            --accent-blue-light: #3b82f6;
+            --border-color: #e5e7eb;
+            --shadow: rgba(0, 0, 0, 0.1);
+            --shadow-hover: rgba(37, 99, 235, 0.2);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-primary: #0f172a;
+                --bg-secondary: #1e293b;
+                --bg-card: #1e293b;
+                --text-primary: #f1f5f9;
+                --text-secondary: #94a3b8;
+                --accent-blue: #3b82f6;
+                --accent-blue-dark: #60a5fa;
+                --accent-blue-light: #93c5fd;
+                --border-color: #334155;
+                --shadow: rgba(0, 0, 0, 0.4);
+                --shadow-hover: rgba(59, 130, 246, 0.3);
+            }
+        }
+
+        html {
+            scroll-behavior: smooth;
+            height: 100%;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+            transition: background-color 0.3s ease;
+        }
+
+        .main-wrapper {
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        .app-container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Dark Mode Toggle */
+        .dark-mode-toggle {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-blue-dark));
+            border-radius: 50%;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 5px 20px var(--shadow);
+            z-index: 1000;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .dark-mode-toggle:hover {
+            transform: scale(1.1) rotate(15deg);
+            box-shadow: 0 8px 25px var(--shadow-hover);
+        }
+
+        /* Navigation */
+        nav {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 2px 15px var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            transition: all 0.3s ease;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            nav {
+                background-color: rgba(15, 23, 42, 0.95);
+            }
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-blue-dark));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 10px;
+        }
+
+        .nav-menu li a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-menu li a:hover {
+            color: var(--accent-blue);
+            background-color: var(--bg-secondary);
+            transform: translateY(-2px);
+        }
+
+        .nav-menu li a.active {
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-blue-dark));
+            color: white;
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            padding: 5px;
+        }
+
+        .menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background-color: var(--text-primary);
+            transition: all 0.3s ease;
+            border-radius: 2px;
+        }
+
+        .menu-toggle.active span:nth-child(1) {
+            transform: rotate(45deg) translate(8px, 8px);
+        }
+
+        .menu-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .menu-toggle.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(8px, -8px);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-blue-dark) 100%);
+            color: white;
+            padding: 120px 20px 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path d="M0,0 Q300,50 600,20 T1200,0 L1200,120 L0,120 Z" fill="rgba(255,255,255,0.1)"/></svg>') bottom repeat-x;
+            opacity: 0.3;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            top: -100px;
+            right: -100px;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(20px); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 22px;
+            margin-bottom: 40px;
+            opacity: 0.95;
+            animation: fadeInUp 1s ease 0.2s backwards;
+        }
+
+        .hero-icons {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 50px;
+            animation: fadeInUp 1s ease 0.4s backwards;
+            flex-wrap: wrap;
+        }
+
+        .hero-icon-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .hero-icon {
+            font-size: 48px;
+            opacity: 0.9;
+            transition: transform 0.3s ease;
+        }
+
+        .hero-icon-box:hover .hero-icon {
+            transform: scale(1.2) rotate(10deg);
+        }
+
+        .hero-icon-text {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Section Styles */
+        section {
+            padding: 80px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 60px;
+            color: var(--accent-blue);
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-blue), var(--accent-blue-dark));
+            border-radius: 2px;
+        }
+
+        /* Profile Section */
+        .profile-section {
+            background-color: var(--bg-secondary);
+        }
+
+        .profile-card {
+            background-color: var(--bg-card);
+            border-radius: 25px;
+            padding: 50px;
+            box-shadow: 0 15px 40px var(--shadow);
+            max-width: 900px;
+            margin: 0 auto;
+            transition: all 0.3s ease;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 50px var(--shadow-hover);
+        }
+
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .profile-image {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-blue-dark) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 120px;
+            color: white;
+            flex-shrink: 0;
+            box-shadow: 0 10px 30px var(--shadow);
+            border: 8px solid var(--bg-card);
+        }
+
+        .profile-info h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            color: var(--accent-blue);
+            font-weight: 700;
+        }
+
+        .profile-info p {
+            color: var(--text-secondary);
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .profile-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .stat-box {
+            text-align: center;
+            padding: 15px;
+            background-color: var(--bg-secondary);
+            border-radius: 12px;
+        }
+
+        .stat-number {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--accent-blue);
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: var(--text-secondary);
+            margin-top: 5px;
+        }
+
+        .profile-details {
+            display: grid;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .profile-detail-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            background-color: var(--bg-secondary);
+            border-radius: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .profile-detail-item:hover {
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-blue-dark));
+            color: white;
+            transform: translateX(10px);
+        }
+
+        .profile-detail-item .icon {
+            font-size: 28px;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--bg-card);
+            border-radius: 12px;
+        }
+
+        .profile-detail-item:hover .icon {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .profile-detail-item a {
+            color: inherit;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* Organization Section */
+        .organization-section {
+            background-color: var(--bg-primary);
+        }
+
+        .org-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .org-card {
+            background-color: var(--bg-card);
+            border-radius: 20px;
+            padding: 35px;
+            box-shadow: 0 10px 30px var(--shadow);
+            transition: all 0.3s ease;
+            text-align: center;
+            border: 2px solid transparent;
+        }
+
+        .org-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px var(--shadow-hover);
+            border-color: var(--accent-blue);
+        }
+
+        .org-icon {
+            font-size: 56px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .org-card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: var(--accent-blue);
+        }
+
+        .org-card p {
+            color: var(--text-secondary);
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        /* Article Section */
+        .article-section {
+            background-color: var(--bg-secondary);
+        }
+
+        .article-grid {
+            display: grid;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .article-card {
+            background-color: var(--bg-card);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px var(--shadow);
+            transition: all 0.3s ease;
+            border-left: 5px solid var(--accent-blue);
+        }
+
+        .article-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 15px 40px var(--shadow-hover);
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        .meta-item i {
+            color: var(--accent-blue);
+        }
+
+        .article-card h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: var(--accent-blue);
+            font-weight: 700;
+        }
+
+        .article-content {
+            color: var(--text-primary);
+            font-size: 16px;
+            line-height: 1.9;
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .read-more-btn {
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-blue-dark));
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 15px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .read-more-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px var(--shadow-hover);
+        }
+
+        .article-content.collapsed {
+            max-height: 150px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .article-content.collapsed::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+            background: linear-gradient(to bottom, transparent, var(--bg-card));
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background-color: var(--bg-primary);
+        }
+
+        .contact-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .contact-info {
+            background-color: var(--bg-card);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px var(--shadow);
+        }
+
+        .contact-info h3 {
+            font-size: 28px;
+            margin-bottom: 25px;
+            color: var(--accent-blue);
+        }
+
+        .contact-info p {
+            color: var(--text-secondary);
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-button {
+            background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-blue-dark) 100%);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .contact-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px var(--shadow-hover);
+        }
+
+        .contact-button i {
+            font-size: 20px;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background-color: var(--bg-card);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px var(--shadow);
+        }
+
+        .contact-form h3 {
+            font-size: 28px;
+            margin-bottom: 25px;
+            color: var(--accent-blue);
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid var(--border-color);
+            border-radius: 10px;
+            background-color: var(--bg-secondary);
+            color: var(--text-primary);
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-group.error input,
+        .form-group.error textarea {
+            border-color: #ef4444;
+        }
+
+        .error-message {
+            color: #ef4444;
+            font-size: 13px;
+            margin-top: 5px;
+            display: none;
+        }
+
+        .form-group.error .error-message {
+            display: block;
+        }
+
+        .submit-btn {
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-blue-dark));
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px var(--shadow-hover);
+        }
+
+        .submit-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        /* Success Modal */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .modal-content {
+            background-color: var(--bg-card);
+            padding: 50px;
+            border-radius: 20px;
+            text-align: center;
+            max-width: 500px;
+            animation: slideUp 0.3s ease;
+            box-shadow: 0 20px 60px var(--shadow);
+        }
+
+        @keyframes slideUp {
+            from { 
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .modal-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+
+        .modal-content h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: var(--accent-blue);
+        }
+
+        .modal-content p {
+            color: var(--text-secondary);
+            margin-bottom: 30px;
+            line-height: 1.7;
+        }
+
+        .modal-close-btn {
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-blue-dark));
+            color: white;
+            border: none;
+            padding: 12px 40px;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .modal-close-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px var(--shadow-hover);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--bg-secondary);
+            padding: 50px 20px 30px;
+            border-top: 2px solid var(--border-color);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h4 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: var(--accent-blue);
+        }
+
+        .footer-section p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-blue-dark));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 20px;
+        }
+
+        .social-link:hover {
+            transform: translateY(-5px) rotate(10deg);
+            box-shadow: 0 5px 15px var(--shadow-hover);
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-blue);
+            transform: translateX(5px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-secondary);
+        }
+
+        .footer-bottom p {
+            margin-bottom: 10px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: flex;
+            }
+
+            .nav-menu {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: var(--bg-card);
+                flex-direction: column;
+                padding: 20px;
+                gap: 5px;
+                box-shadow: 0 10px 30px var(--shadow);
+                display: none;
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .hero-icons {
+                gap: 30px;
+            }
+
+            .hero-icon {
+                font-size: 36px;
+            }
+
+            .section-title {
+                font-size: 32px;
+            }
+
+            .profile-header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-image {
+                width: 200px;
+                height: 200px;
+                font-size: 80px;
+            }
+
+            .profile-info h2 {
+                font-size: 28px;
+            }
+
+            .profile-info p {
+                font-size: 16px;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            .dark-mode-toggle {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .modal-content {
+                padding: 30px;
+                margin: 20px;
+            }
+
+            .article-card {
+                padding: 25px;
+            }
+
+            .article-card h3 {
+                font-size: 22px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .profile-card {
+                padding: 30px 20px;
+            }
+
+            .contact-form,
+            .contact-info {
+                padding: 25px;
+            }
+
+            .org-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
+ </head>
+ <body>
+  <div class="main-wrapper"><!-- Dark Mode Toggle --> <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode"> <i class="fas fa-moon"></i> </button> <!-- Navigation -->
+   <nav>
+    <div class="nav-container"><a href="#home" class="logo"> <i class="fas fa-graduation-cap"></i> <span>EAS</span> </a>
+     <div class="menu-toggle" id="menuToggle"><span></span> <span></span> <span></span>
+     </div>
+     <ul class="nav-menu" id="navMenu">
+      <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="#tentang" class="nav-link"><i class="fas fa-user"></i> Tentang Saya</a></li>
+      <li><a href="#organisasi" class="nav-link"><i class="fas fa-users"></i> Organisasi</a></li>
+      <li><a href="#artikel" class="nav-link"><i class="fas fa-book"></i> Artikel</a></li>
+      <li><a href="#kontak" class="nav-link"><i class="fas fa-envelope"></i> Kontak</a></li>
+     </ul>
+    </div>
+   </nav><!-- Hero Section -->
+   <header class="hero" id="home">
+    <div class="hero-content">
+     <h1 id="heroTitle">Belajar, Berkembang, Berprestasi</h1>
+     <p id="heroSubtitle">Perjalanan seorang mahasiswa dalam mengelola waktu dan meraih impian di bidang pendidikan</p>
+     <div class="hero-icons">
+      <div class="hero-icon-box"><span class="hero-icon">📚</span> <span class="hero-icon-text">Belajar</span>
+      </div>
+      <div class="hero-icon-box"><span class="hero-icon">🎓</span> <span class="hero-icon-text">Pendidikan</span>
+      </div>
+      <div class="hero-icon-box"><span class="hero-icon">💡</span> <span class="hero-icon-text">Inovasi</span>
+      </div>
+      <div class="hero-icon-box"><span class="hero-icon">🚀</span> <span class="hero-icon-text">Prestasi</span>
+      </div>
+     </div>
+    </div>
+   </header>
+   <main><!-- Profile Section -->
+    <section class="profile-section" id="tentang">
+     <div class="app-container">
+      <h2 class="section-title"><i class="fas fa-user-circle"></i> Tentang Saya</h2>
+      <div class="profile-card">
+       <div class="profile-header">
+        <div class="profile-image">
+         👨‍🎓
+        </div>
+        <div class="profile-info">
+         <h2 id="profileName">Endra Agus Setiawan</h2>
+         <p id="profileTitle">Mahasiswa Manajemen Pendidikan Islam</p>
+         <div class="profile-stats">
+          <div class="stat-box">
+           <div class="stat-number">
+            3+
+           </div>
+           <div class="stat-label">
+            Tahun Studi
+           </div>
+          </div>
+          <div class="stat-box">
+           <div class="stat-number">
+            15+
+           </div>
+           <div class="stat-label">
+            Artikel
+           </div>
+          </div>
+          <div class="stat-box">
+           <div class="stat-number">
+            5+
+           </div>
+           <div class="stat-label">
+            Organisasi
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="profile-details">
+        <div class="profile-detail-item"><span class="icon"><i class="fas fa-envelope"></i></span>
+         <div><strong>Email</strong><br><a href="mailto:endraagussetiawan11@gmail.com" id="profileEmail">endraagussetiawan11@gmail.com</a>
+         </div>
+        </div>
+        <div class="profile-detail-item"><span class="icon"><i class="fab fa-instagram"></i></span>
+         <div><strong>Instagram</strong><br><a href="https://instagram.com/endraaaa18" target="_blank" rel="noopener noreferrer" id="profileInstagram">@endraaaa18</a>
+         </div>
+        </div>
+        <div class="profile-detail-item"><span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+         <div><strong>Lokasi</strong><br><span>Indonesia</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section><!-- Organization Section -->
+    <section class="organization-section" id="organisasi">
+     <div class="app-container">
+      <h2 class="section-title"><i class="fas fa-users"></i> Organisasi &amp; Kegiatan</h2>
+      <div class="org-grid">
+       <div class="org-card"><span class="org-icon">🎯</span>
+        <h3>BEM Fakultas</h3>
+        <p>Aktif dalam kegiatan kemahasiswaan dan pengembangan soft skill melalui berbagai program kerja yang bermanfaat</p>
+       </div>
+       <div class="org-card"><span class="org-icon">📖</span>
+        <h3>Komunitas Literasi</h3>
+        <p>Berbagi ilmu dan diskusi seputar pendidikan, manajemen, dan pengembangan diri bersama sesama mahasiswa</p>
+       </div>
+       <div class="org-card"><span class="org-icon">🎤</span>
+        <h3>Public Speaking Club</h3>
+        <p>Melatih kemampuan komunikasi dan presentasi untuk meningkatkan kepercayaan diri di depan publik</p>
+       </div>
+      </div>
+     </div>
+    </section><!-- Article Section -->
+    <section class="article-section" id="artikel">
+     <div class="app-container">
+      <h2 class="section-title"><i class="fas fa-book-open"></i> Artikel Pendidikan</h2>
+      <div class="article-grid"><!-- Article 1 -->
+       <article class="article-card">
+        <div class="article-meta"><span class="meta-item"><i class="fas fa-calendar"></i> 15 Januari 2025</span> <span class="meta-item"><i class="fas fa-clock"></i> 5 menit baca</span> <span class="meta-item"><i class="fas fa-tag"></i> Produktivitas</span>
+        </div>
+        <h3>Manajemen Waktu untuk Mahasiswa: Tips Produktif di Tengah Kesibukan</h3>
+        <div class="article-content collapsed" id="article1">
+         <p>Sebagai mahasiswa, mengelola waktu itu ibarat main puzzle yang harus pas di setiap bagiannya. Kuliah, organisasi, tugas, dan kehidupan sosial sering kali bikin kita overwhelmed. Tapi tenang, ada caranya kok biar semua bisa berjalan seimbang! Yang pertama, bikin to-do list harian. Nggak perlu ribet, cukup tulis 3-5 hal penting yang harus diselesaikan hari itu. Dengan begitu, kita punya fokus yang jelas dan nggak kebingungan mau mulai dari mana.</p>
+         <p>Selain itu, teknik Pomodoro bisa jadi andalan banget! Coba deh belajar selama 25 menit fokus penuh, terus istirahat 5 menit. Ulangi sampai 4 siklus, baru istirahat panjang. Cara ini bikin otak kita tetap segar dan nggak gampang bosan. Oh iya, jangan lupa juga untuk prioritaskan tugas yang urgent dan penting duluan. Kalau tugasnya masih lama deadlinenya, boleh ditunda, tapi jangan sampai lupa ya!</p>
+         <p>Terakhir, yang paling penting adalah jaga keseimbangan hidup. Belajar itu penting, tapi istirahat juga nggak kalah penting. Luangkan waktu untuk hobi, olahraga, atau sekadar nongkrong sama teman. Ingat, produktif bukan berarti kerja terus tanpa henti, tapi gimana kita bisa smart dalam mengatur waktu supaya semua aspek hidup tetap berjalan baik. Semangat terus untuk semua mahasiswa di luar sana! 🚀</p>
+        </div><button class="read-more-btn" onclick="toggleArticle('article1', this)"> <span>Baca Selengkapnya</span> <i class="fas fa-arrow-down"></i> </button>
+       </article><!-- Article 2 -->
+       <article class="article-card">
+        <div class="article-meta"><span class="meta-item"><i class="fas fa-calendar"></i> 10 Januari 2025</span> <span class="meta-item"><i class="fas fa-clock"></i> 6 menit baca</span> <span class="meta-item"><i class="fas fa-tag"></i> Motivasi</span>
+        </div>
+        <h3>Mengatasi Burnout Akademik: Strategi Jitu untuk Mahasiswa</h3>
+        <div class="article-content collapsed" id="article2">
+         <p>Burnout akademik adalah kondisi kelelahan mental dan fisik yang dialami mahasiswa karena tuntutan akademis yang berlebihan. Gejalanya bisa berupa kehilangan motivasi, sulit konsentrasi, bahkan merasa putus asa. Kalau kamu merasa mengalami hal ini, jangan panik! Langkah pertama adalah mengakui bahwa kamu butuh istirahat. Nggak ada yang salah dengan mengambil jeda sejenak untuk me-recharge energi.</p>
+         <p>Coba deh evaluasi rutinitas harianmu. Apakah kamu terlalu memaksakan diri? Apakah ada kegiatan yang bisa dikurangi atau didelegasikan? Jangan ragu untuk bilang "tidak" pada beberapa kesempatan jika memang kapasitasmu sudah penuh. Selain itu, jaga kesehatan mental dengan melakukan aktivitas yang kamu sukai. Bisa mendengarkan musik, menonton film favorit, atau jalan-jalan ke tempat yang menenangkan. Self-care itu bukan kemewahan, tapi kebutuhan!</p>
+         <p>Yang nggak kalah penting adalah membangun support system yang solid. Cerita sama teman, keluarga, atau konselor kampus tentang apa yang kamu rasakan. Kadang, hanya dengan bercerita saja sudah bisa bikin hati lebih lega. Ingat, kamu nggak sendirian dalam perjalanan ini. Banyak mahasiswa lain yang juga mengalami hal serupa. Jadi, jangan malu untuk meminta bantuan dan support. Kesehatan mentalmu jauh lebih penting daripada nilai sempurna. Take care of yourself, ya! 💙</p>
+        </div><button class="read-more-btn" onclick="toggleArticle('article2', this)"> <span>Baca Selengkapnya</span> <i class="fas fa-arrow-down"></i> </button>
+       </article><!-- Article 3 -->
+       <article class="article-card">
+        <div class="article-meta"><span class="meta-item"><i class="fas fa-calendar"></i> 5 Januari 2025</span> <span class="meta-item"><i class="fas fa-clock"></i> 7 menit baca</span> <span class="meta-item"><i class="fas fa-tag"></i> Pengembangan Diri</span>
+        </div>
+        <h3>Membangun Personal Branding sebagai Mahasiswa: Mulai dari Sekarang!</h3>
+        <div class="article-content collapsed" id="article3">
+         <p>Personal branding bukan cuma untuk selebgram atau influencer aja, lho! Sebagai mahasiswa, kamu juga perlu membangun citra diri yang positif dan profesional. Kenapa? Karena di era digital ini, rekam jejakmu di media sosial dan platform online bisa jadi portfolio yang dilihat calon employer atau kolega profesional. Mulailah dengan menentukan value dan keunikan yang ingin kamu tonjolkan. Apakah kamu ahli di bidang tertentu? Punya passion yang kuat? Atau punya pengalaman menarik yang bisa dibagikan?</p>
+         <p>Selanjutnya, optimalkan profil media sosialmu. LinkedIn, Instagram, atau Twitter bisa jadi media yang powerful untuk membangun personal brand. Bagikan konten-konten berkualitas yang sesuai dengan bidang yang kamu minati. Misalnya, kalau kamu suka desain grafis, share hasil karyamu secara konsisten. Kalau tertarik dengan public speaking, upload video-video presentasimu. Konsistensi adalah kunci! Jangan lupa juga untuk engage dengan komunitas yang relevan, comment di postingan orang lain, dan bangun networking yang luas.</p>
+         <p>Terakhir, jaga reputasi onlinemu. Hindari posting hal-hal negatif atau kontroversi yang bisa merusak citramu di masa depan. Ingat, apa yang kamu post hari ini bisa tetap ada di internet bertahun-tahun ke depan. Jadilah versi terbaik dari dirimu sendiri, baik online maupun offline. Personal branding yang kuat bukan tentang pencitraan palsu, tapi tentang menunjukkan siapa diri kamu yang sebenarnya dengan cara yang profesional dan autentik. Start building your brand today! 🌟</p>
+        </div><button class="read-more-btn" onclick="toggleArticle('article3', this)"> <span>Baca Selengkapnya</span> <i class="fas fa-arrow-down"></i> </button>
+       </article>
+      </div>
+     </div>
+    </section><!-- Contact Section -->
+    <section class="contact-section" id="kontak">
+     <div class="app-container">
+      <h2 class="section-title"><i class="fas fa-paper-plane"></i> Hubungi Saya</h2>
+      <div class="contact-container">
+       <div class="contact-info">
+        <h3>Mari Terhubung!</h3>
+        <p>Jangan ragu untuk menghubungi saya jika ingin berdiskusi tentang pendidikan, berbagi ide, atau sekadar say hi! Saya senang berkenalan dengan orang-orang baru. 👋</p>
+        <div class="contact-links"><a href="mailto:endraagussetiawan11@gmail.com" class="contact-button"> <i class="fas fa-envelope"></i> <span>Email Saya</span> </a> <a href="https://instagram.com/endraaaa18" target="_blank" rel="noopener noreferrer" class="contact-button"> <i class="fab fa-instagram"></i> <span>Instagram</span> </a> <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" class="contact-button"> <i class="fab fa-whatsapp"></i> <span>WhatsApp</span> </a>
+        </div>
+       </div>
+       <form class="contact-form" id="contactForm">
+        <h3>Kirim Pesan</h3>
+        <div class="form-group" id="nameGroup"><label for="name">Nama Lengkap</label> <input type="text" id="name" name="name" placeholder="Masukkan nama Anda"> <span class="error-message">Nama harus diisi</span>
+        </div>
+        <div class="form-group" id="emailGroup"><label for="email">Email</label> <input type="email" id="email" name="email" placeholder="nama@email.com"> <span class="error-message">Email tidak valid</span>
+        </div>
+        <div class="form-group" id="messageGroup"><label for="message">Pesan</label> <textarea id="message" name="message" placeholder="Tulis pesan Anda di sini..."></textarea> <span class="error-message">Pesan harus diisi (minimal 10 karakter)</span>
+        </div><button type="submit" class="submit-btn"> <i class="fas fa-paper-plane"></i> <span>Kirim Pesan</span> </button>
+       </form>
+      </div>
+     </div>
+    </section>
+   </main><!-- Footer -->
+   <footer>
+    <div class="footer-content">
+     <div class="footer-section">
+      <h4><i class="fas fa-graduation-cap"></i> Endra Agus Setiawan</h4>
+      <p>Mahasiswa Manajemen Pendidikan Islam yang passionate dalam dunia pendidikan dan pengembangan diri.</p>
+      <div class="social-links"><a href="https://instagram.com/endraaaa18" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram"> <i class="fab fa-instagram"></i> </a> <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn"> <i class="fab fa-linkedin-in"></i> </a> <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter"> <i class="fab fa-twitter"></i> </a> <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub"> <i class="fab fa-github"></i> </a> <a href="mailto:endraagussetiawan11@gmail.com" class="social-link" aria-label="Email"> <i class="fas fa-envelope"></i> </a>
+      </div>
+     </div>
+     <div class="footer-section">
+      <h4><i class="fas fa-link"></i> Quick Links</h4>
+      <div class="footer-links"><a href="#home"><i class="fas fa-home"></i> Home</a> <a href="#tentang"><i class="fas fa-user"></i> Tentang Saya</a> <a href="#organisasi"><i class="fas fa-users"></i> Organisasi</a> <a href="#artikel"><i class="fas fa-book"></i> Artikel</a> <a href="#kontak"><i class="fas fa-envelope"></i> Kontak</a>
+      </div>
+     </div>
+     <div class="footer-section">
+      <h4><i class="fas fa-map-marker-alt"></i> Informasi</h4>
+      <div class="footer-links"><a href="#"><i class="fas fa-envelope"></i> endraagussetiawan11@gmail.com</a> <a href="#"><i class="fas fa-map-pin"></i> Indonesia</a> <a href="#"><i class="fas fa-university"></i> Manajemen Pendidikan Islam</a>
+      </div>
+     </div>
+    </div>
+    <div class="footer-bottom">
+     <p id="footerText">© 2025 Endra Agus Setiawan. Dibuat dengan ❤️ untuk pendidikan.</p>
+     <p style="font-size: 13px; margin-top: 5px;">Made with HTML5, CSS3 &amp; JavaScript</p>
+    </div>
+   </footer><!-- Success Modal -->
+   <div class="modal-overlay" id="successModal">
+    <div class="modal-content">
+     <div class="modal-icon">
+      ✅
+     </div>
+     <h3>Pesan Terkirim!</h3>
+     <p>Terima kasih telah menghubungi saya. Pesan Anda sudah saya terima dan akan segera saya balas. Have a great day! 😊</p><button class="modal-close-btn" onclick="closeModal()">Tutup</button>
+    </div>
+   </div>
+  </div>
+  <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+
+        // Active nav link on scroll
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('section, header');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Dark Mode Toggle (Manual override)
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        let isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+        darkModeToggle.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark-mode-override');
+            isDarkMode = !isDarkMode;
+            darkModeToggle.querySelector('i').className = isDarkMode ? 'fas fa-sun' : 'fas fa-moon';
+        });
+
+        // Article Toggle
+        function toggleArticle(articleId, button) {
+            const article = document.getElementById(articleId);
+            const icon = button.querySelector('i');
+            const text = button.querySelector('span');
+            
+            if (article.classList.contains('collapsed')) {
+                article.classList.remove('collapsed');
+                text.textContent = 'Sembunyikan';
+                icon.className = 'fas fa-arrow-up';
+            } else {
+                article.classList.add('collapsed');
+                text.textContent = 'Baca Selengkapnya';
+                icon.className = 'fas fa-arrow-down';
+            }
+        }
+
+        // Form Validation
+        const contactForm = document.getElementById('contactForm');
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+        const messageInput = document.getElementById('message');
+
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+
+        function showError(input, message) {
+            const formGroup = input.parentElement;
+            formGroup.classList.add('error');
+            const errorMsg = formGroup.querySelector('.error-message');
+            if (message) errorMsg.textContent = message;
+        }
+
+        function removeError(input) {
+            const formGroup = input.parentElement;
+            formGroup.classList.remove('error');
+        }
+
+        // Real-time validation
+        nameInput.addEventListener('input', () => {
+            if (nameInput.value.trim().length > 0) {
+                removeError(nameInput);
+            }
+        });
+
+        emailInput.addEventListener('input', () => {
+            if (validateEmail(emailInput.value)) {
+                removeError(emailInput);
+            }
+        });
+
+        messageInput.addEventListener('input', () => {
+            if (messageInput.value.trim().length >= 10) {
+                removeError(messageInput);
+            }
+        });
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            let isValid = true;
+
+            // Validate name
+            if (nameInput.value.trim() === '') {
+                showError(nameInput, 'Nama harus diisi');
+                isValid = false;
+            } else {
+                removeError(nameInput);
+            }
+
+            // Validate email
+            if (!validateEmail(emailInput.value)) {
+                showError(emailInput, 'Email tidak valid');
+                isValid = false;
+            } else {
+                removeError(emailInput);
+            }
+
+            // Validate message
+            if (messageInput.value.trim().length < 10) {
+                showError(messageInput, 'Pesan harus diisi (minimal 10 karakter)');
+                isValid = false;
+            } else {
+                removeError(messageInput);
+            }
+
+            if (isValid) {
+                // Show success modal
+                document.getElementById('successModal').classList.add('active');
+                
+                // Reset form
+                contactForm.reset();
+            }
+        });
+
+        function closeModal() {
+            document.getElementById('successModal').classList.remove('active');
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('successModal').addEventListener('click', (e) => {
+            if (e.target.id === 'successModal') {
+                closeModal();
+            }
+        });
+
+        // Element SDK Configuration
+        const defaultConfig = {
+            profile_name: "Endra Agus Setiawan",
+            profile_title: "Mahasiswa Manajemen Pendidikan Islam",
+            profile_email: "endraagussetiawan11@gmail.com",
+            profile_instagram: "@endraaaa18",
+            hero_title: "Belajar, Berkembang, Berprestasi",
+            hero_subtitle: "Perjalanan seorang mahasiswa dalam mengelola waktu dan meraih impian di bidang pendidikan",
+            footer_text: "© 2025 Endra Agus Setiawan. Dibuat dengan ❤️ untuk pendidikan.",
+            background_color: "#ffffff",
+            surface_color: "#f8f9fa",
+            text_color: "#1a1a1a",
+            accent_color: "#2563eb",
+            link_color: "#1e40af"
+        };
+
+        async function onConfigChange(config) {
+            document.getElementById('profileName').textContent = config.profile_name || defaultConfig.profile_name;
+            document.getElementById('profileTitle').textContent = config.profile_title || defaultConfig.profile_title;
+            document.getElementById('profileEmail').textContent = config.profile_email || defaultConfig.profile_email;
+            document.getElementById('profileEmail').href = `mailto:${config.profile_email || defaultConfig.profile_email}`;
+            
+            const instagramHandle = config.profile_instagram || defaultConfig.profile_instagram;
+            document.getElementById('profileInstagram').textContent = instagramHandle;
+            const instagramUrl = instagramHandle.startsWith('@') 
+                ? `https://instagram.com/${instagramHandle.substring(1)}` 
+                : `https://instagram.com/${instagramHandle}`;
+            document.getElementById('profileInstagram').href = instagramUrl;
+            
+            document.getElementById('heroTitle').textContent = config.hero_title || defaultConfig.hero_title;
+            document.getElementById('heroSubtitle').textContent = config.hero_subtitle || defaultConfig.hero_subtitle;
+            document.getElementById('footerText').textContent = config.footer_text || defaultConfig.footer_text;
+
+            // Apply colors
+            const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            
+            if (!isDarkMode) {
+                document.documentElement.style.setProperty('--bg-primary', config.background_color || defaultConfig.background_color);
+                document.documentElement.style.setProperty('--bg-secondary', config.surface_color || defaultConfig.surface_color);
+                document.documentElement.style.setProperty('--text-primary', config.text_color || defaultConfig.text_color);
+                document.documentElement.style.setProperty('--accent-blue', config.accent_color || defaultConfig.accent_color);
+                document.documentElement.style.setProperty('--accent-blue-dark', config.link_color || defaultConfig.link_color);
+            }
+        }
+
+        function mapToCapabilities(config) {
+            return {
+                recolorables: [
+                    {
+                        get: () => config.background_color || defaultConfig.background_color,
+                        set: (value) => {
+                            config.background_color = value;
+                            if (window.elementSdk) {
+                                window.elementSdk.setConfig({ background_color: value });
+                            }
+                        }
+                    },
+                    {
+                        get: () => config.surface_color || defaultConfig.surface_color,
+                        set: (value) => {
+                            config.surface_color = value;
+                            if (window.elementSdk) {
+                                window.elementSdk.setConfig({ surface_color: value });
+                            }
+                        }
+                    },
+                    {
+                        get: () => config.text_color || defaultConfig.text_color,
+                        set: (value) => {
+                            config.text_color = value;
+                            if (window.elementSdk) {
+                                window.elementSdk.setConfig({ text_color: value });
+                            }
+                        }
+                    },
+                    {
+                        get: () => config.accent_color || defaultConfig.accent_color,
+                        set: (value) => {
+                            config.accent_color = value;
+                            if (window.elementSdk) {
+                                window.elementSdk.setConfig({ accent_color: value });
+                            }
+                        }
+                    },
+                    {
+                        get: () => config.link_color || defaultConfig.link_color,
+                        set: (value) => {
+                            config.link_color = value;
+                            if (window.elementSdk) {
+                                window.elementSdk.setConfig({ link_color: value });
+                            }
+                        }
+                    }
+                ],
+                borderables: [],
+                fontEditable: undefined,
+                fontSizeable: undefined
+            };
+        }
+
+        function mapToEditPanelValues(config) {
+            return new Map([
+                ["profile_name", config.profile_name || defaultConfig.profile_name],
+                ["profile_title", config.profile_title || defaultConfig.profile_title],
+                ["profile_email", config.profile_email || defaultConfig.profile_email],
+                ["profile_instagram", config.profile_instagram || defaultConfig.profile_instagram],
+                ["hero_title", config.hero_title || defaultConfig.hero_title],
+                ["hero_subtitle", config.hero_subtitle || defaultConfig.hero_subtitle],
+                ["footer_text", config.footer_text || defaultConfig.footer_text]
+            ]);
+        }
+
+        if (window.elementSdk) {
+            window.elementSdk.init({
+                defaultConfig,
+                onConfigChange,
+                mapToCapabilities,
+                mapToEditPanelValues
+            });
+        }
+    </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9b6533444084fd36',t:'MTc2NzEzNjExOC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
