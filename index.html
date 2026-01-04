@@ -363,19 +363,21 @@
         }
 
         .profile-image {
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-blue-dark) 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 120px;
-            color: white;
-            flex-shrink: 0;
-            box-shadow: 0 10px 30px var(--shadow);
-            border: 8px solid var(--bg-card);
-        }
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    overflow: hidden;          /* kunci agar benar-benar bulat */
+    margin: 0 auto;
+    flex-shrink: 0;            /* cegah ketarik flex */
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;         /* potong foto full body */
+    object-position: top;      /* fokus ke wajah */
+    display: block;
+}
 
         .profile-info h2 {
             font-size: 36px;
@@ -1065,11 +1067,17 @@
       <div class="profile-card">
        <div class="profile-header">
         <div class="profile-image">
-         👨‍🎓
-        </div>
+         <img src="img.jpg" alt="foto profil">
+               </div>
+               
+
+
+               
+
+
         <div class="profile-info">
          <h2 id="profileName">Endra Agus Setiawan</h2>
-         <p id="profileTitle">Mahasiswa semester 2 Manajemen Pendidikan Islam yang suka belajar hal baru tentang dunia pendidikan. Tertarik pada cara-cara kreatif dalam mengelola lembaga pendidikan agar lebih maju dan bermanfaat. Berusaha terus berkembang dan berkontribusi, terutama dalam menghadirkan pendidikan yang lebih baik dan sesuai dengan nilai-nilai Islami</p>
+         <p id="profileTitle">Mahasiswa  Manajemen Pendidikan Islam yang suka belajar hal baru tentang dunia pendidikan. Tertarik pada cara-cara kreatif dalam mengelola lembaga pendidikan agar lebih maju dan bermanfaat. Berusaha terus berkembang dan berkontribusi, terutama dalam menghadirkan pendidikan yang lebih baik dan sesuai dengan nilai-nilai Islami</p>
          <div class="profile-stats">
           <div class="stat-box">
            <div class="stat-number">
@@ -1170,6 +1178,8 @@
        </article>
       </div>
      </div>
+      
+
     </section><!-- Contact Section -->
     <section class="contact-section" id="kontak">
      <div class="app-container">
